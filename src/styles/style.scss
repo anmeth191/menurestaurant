@@ -1,0 +1,13 @@
+@import './sections/menu.scss';
+@import './reusables/reusables.scss';
+
+* , :root , ::after , ::before {
+padding: 0;
+margin: 0;
+box-sizing:border-box;
+}
+
+html{
+    //font-size: 62.5%;
+    font-family: 'Zilla Slab', serif;
+}

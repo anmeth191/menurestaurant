@@ -1,0 +1,17 @@
+
+/*This styles the titles h1 or considered bigTtiles in this case our menu appetizzers 
+and also the sides title */
+.bigTitle{
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    font-weight: 1000;
+    text-align: center;
+     display: block;
+     padding: 1rem;
+     
+     &:not(:last-child){
+         margin-bottom: 1rem;
+     }
+
+
+}
