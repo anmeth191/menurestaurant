@@ -1,17 +1,64 @@
-
+@import '../variables/variables.scss';
 /*This styles the titles h1 or considered bigTtiles in this case our menu appetizzers 
 and also the sides title */
-.bigTitle{
+.mainTitle , .bigTitle{
     font-size: 2rem;
     letter-spacing: 0.2rem;
     font-weight: 1000;
     text-align: center;
-     display: block;
      padding: 1rem;
-     
      &:not(:last-child){
          margin-bottom: 1rem;
      }
-
-
 }
+.mainTitle{
+    color: black;
+}
+.bigTitle{
+    width: 40%;
+    margin: 0 auto;
+    position: absolute;
+    top: -4%;
+    left: 50%;
+    transform: translate(-50%);
+    background: $primary-light;
+    border-radius: 1rem;
+}
+
+//This a style for the tables in the menu
+.tableDisplay{
+
+    padding: 1rem;
+    width: 100%;
+   
+
+    &__body{
+        &--row{
+            display: block;
+            width: 100%;
+            position: relative;
+      
+            
+           &-data{
+               font-size: 1.5rem;
+
+               &:last-child{
+               position: absolute;
+               top: 0;
+               right: 0;
+               font-size: 1.5rem;
+               }
+              
+   
+
+               &-description{
+                  display: block;
+                  font-size: 1rem ;
+               }
+               
+            }//end of the table row data
+        }//end of the table row
+    }//end of th table body
+
+}//end of the table display
+
