@@ -10,13 +10,11 @@ return(
                 <Link to="/" className="navbar__nav_home_link" ><h2 className="navbar__nav_home_link-title">Home</h2></Link>
             </div>
             <div className="navbar__nav_links">
-                <ul className="navbar_nav_links_ul">
-                <li className="navbar_nav_links_ul_li"> 
-                    <Link to="/menu" className="navbar_nav_links_ul_li-links">Menu</Link>
-                    <Link to="/menu" className="navbar_nav_links_ul_li-links">Mailing List</Link>
-                    <Link to="/menu" className="navbar_nav_links_ul_li-links">Directions</Link>
-                    <Link to="/menu" className="navbar_nav_links_ul_li-links">Contact Us</Link>
-                </li>       
+                <ul className="navbar__nav_links_ul">
+                <li className="navbar__nav_links_ul_li"><Link to="/contact" className="navbar__nav_links_ul_li-links">Contact us</Link></li>       
+                <li className="navbar__nav_links_ul_li"><Link to="/directions" className="navbar__nav_links_ul_li-links">Directions</Link></li> 
+                <li className="navbar__nav_links_ul_li"><Link to="/mailinglist" className="navbar__nav_links_ul_li-links">Email us</Link></li>
+                <li className="navbar__nav_links_ul_li"><Link to="/menu" className="navbar__nav_links_ul_li-links">Menu</Link></li>
              </ul>
             </div>
         </nav>
