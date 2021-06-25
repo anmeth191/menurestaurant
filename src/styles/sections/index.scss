@@ -1,0 +1,62 @@
+@import '../variables/variables.scss';
+@import '../mixins/mixins.scss';
+
+.index{
+
+    &__showcase{
+        height: 80vh;
+        background: linear-gradient(to right , rgba($secondary-dark , 0.9) , rgba($secondary-color , 0.8)), url('../../assets/showcase_large.jpg'); 
+        background-position: start;
+        background-size: auto;
+        color: $text-color;
+        position: relative;
+
+        &__container{
+           @include centerAbsoulte;
+           background: rgba($secondary-color , 0.8);
+            
+            padding: 4rem;
+
+            &--content{
+                &--title{
+                    text-align: center;
+
+                    & > h1 { margin-bottom: 1rem;}
+                    &-h1{
+                     display: block;
+                     font-size: 7rem;
+                     letter-spacing: 0.3rem;
+                    }//end of the header h1 element
+
+                    &-h2{
+                       display: block;
+                       font-size: 2rem;
+                       text-transform: lowercase;
+                    }//end of the header h2 element
+                }//end of the container where the to headers are 
+
+            &--buttons{
+                margin-top:4rem;
+                width: 100%;
+                
+                &-container{
+                    width: 60%;
+                    margin: 0 auto;
+                    display: grid;
+                &-button{
+                    grid-template-columns: 1fr 1fr;
+                    background: red;
+                    display: inline-block;
+                    padding: 1.5rem 3.5rem;
+                    color: $text-color;
+                    text-decoration: none;
+                    font-size: 1.5rem;
+                    
+                }
+                }
+            }
+
+            }//end of the content container
+        }//end of the main container
+    }//end of the whole showcase
+}//end of the index container

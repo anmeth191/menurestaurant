@@ -1,8 +1,10 @@
+@import './mixins/mixins.scss';
 @import './sections/menu.scss';
 @import './reusables/reusables.scss';
 @import './variables/variables.scss';
 @import './sections/navbar.scss';
 @import './sections/footer.scss';
+@import './sections/index.scss';
 * , :root , ::after , ::before {
 padding: 0;
 margin: 0;
