@@ -1,0 +1,36 @@
+@import '../variables/variables.scss';
+
+.menu{
+    width: 100%;
+    //background: linear-gradient( to right , rgba($primary-color , 0.9) , rgba($primary-dark , 0.7));
+
+    &__container{
+        border-radius: 1rem;
+        background: linear-gradient(to right , rgba($secondary-dark , 0.9) , rgba($secondary-color , 0.8)), url('../../assets/appetizer.jpg'); 
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        width: 85%;
+        margin: 0 auto;
+        display: grid;
+        //border-top:0.3rem double $secondary-dark;
+        margin-top: 3rem;
+        padding: 1rem;
+     
+        grid-template-columns: repeat(8 , minmax(min-content , 1fr));
+
+      &__appetizers{ border-right: 0.1rem solid black;}     
+      &__appetizers , &__sides{    margin-top: 2.5rem; }
+  
+
+       &__appetizers{
+           grid-column: 1 / 5;
+        }
+
+        &__sides{ 
+            grid-column: 5/ -1;
+        }
+    }
+
+
+}    
