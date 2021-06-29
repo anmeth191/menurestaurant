@@ -16,7 +16,7 @@ lng:  -75.78374863348901
 const  Geolocation = ()=> {
     
 return(
-       <LoadScript googleMapsApiKey='my apiKey goes Here'>
+       <LoadScript googleMapsApiKey='AIzaSyAAtkta1KLCqJq9tyZsoPkSM6f-e1cnKJ4'>
            <GoogleMap
             mapContainerStyle={containerStyle}
             center={center}

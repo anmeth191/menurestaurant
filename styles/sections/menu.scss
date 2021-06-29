@@ -3,34 +3,136 @@
 .menu{
     width: 100%;
     //background: linear-gradient( to right , rgba($primary-color , 0.9) , rgba($primary-dark , 0.7));
-
+    background: $secondary-color;
+     
     &__container{
-        border-radius: 1rem;
-        background: linear-gradient(to right , rgba($secondary-dark , 0.9) , rgba($secondary-color , 0.8)), url('../../assets/appetizer.jpg'); 
-        background-size: cover;
-        background-position: center;
-        position: relative;
-        width: 85%;
+        padding: 1rem;
+        width: 80%;
         margin: 0 auto;
         display: grid;
-        //border-top:0.3rem double $secondary-dark;
-        margin-top: 3rem;
-        padding: 1rem;
-     
-        grid-template-columns: repeat(8 , minmax(min-content , 1fr));
+        grid-template-columns: repeat(12 , minmax(min-content, 1fr));
+       grid-template-rows: repeat(12 , minmax(13rem , 1fr));
+       grid-gap: 0.5rem;
+        
+       & > div{
+        background-position: center;
+           background-size: cover;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           position: relative;
+           transition: 0.2s;
 
-      &__appetizers{ border-right: 0.1rem solid black;}     
-      &__appetizers , &__sides{    margin-top: 2.5rem; }
-  
+
+           &:hover{
+               transform:  scale(1.02);
+           }
+
+       }
+
 
        &__appetizers{
-           grid-column: 1 / 5;
+         background:url('../../assets/fries-large.jpg');
+         grid-column: 1 / 10;
+         grid-row: 1 / 2 ;
+       
+
+        
+       }
+
+       &__soupSalads{
+           background: url('../../assets/salad-large.jpg');
+           grid-column: 10 / -1;
+           grid-row: 1 / 2;
+       }
+
+       &__pizza{
+           background: url('../../assets/pizza-large.jpg');
+           grid-column: 1/ 6;
+           grid-row: 2 / 4;
+       }
+
+       &__gourmetPizza{
+           background: url('../../assets/pizza2-large.jpg');
+         grid-column: 6 / -1;
+         grid-row: 2 / 3;
+ 
+       }
+
+
+       &__calzoneStromboli{
+           background: url('../../assets/calzone-large.jpg');
+           grid-column: 6 / -1;
+           grid-row: 3 / 6;
+       }
+
+       &__pasta{
+           background: url('../../assets/pasta-large.jpg');
+           grid-column: 1 / 4;
+           grid-row: 4 / 6;
+       }
+
+       &__bakedDishes{
+           background: url('../../assets/baked-large.jpg');
+           grid-column: 4 / 6;
+           grid-row: 4 / 6;
+       }
+
+       &__entrees{
+           background: url('../../assets/entrees-large.jpg');
+           grid-column: 1 / -1;
+           grid-row: 6 / 9;
+       }
+
+       &__burgerChicken{
+           background: url('../../assets/burgerChicken-large.jpg');
+           grid-column: 1 / 5 ;
+           grid-row: 9 / 11;
+       }
+
+
+       &__superBurgers{
+           background: url('../../assets/superBurger-large.jpg');
+           grid-column: 5 / 10;
+           grid-row: 9 / 10;
         }
 
-        &__sides{ 
-            grid-column: 5/ -1;
+        &__hotSubs{
+            background: url('../../assets/hotSubs-large.jpg');
+
+            grid-column: 10 / -1;
+            grid-row: 9 / 10;
+
         }
-    }
 
+        &__coldSubs{
+            background: url('../../assets/coldSub-large.jpg');
+            grid-row: 11 / -1;
+            grid-column: 1 / 6;
+        }
 
+        &__wraps{
+            background: url('../../assets/wrap-large.jpg');
+           grid-column: 5 / 8;
+            grid-row: 10 / 11;
+        }
+
+        &__kidsMenu{
+            background: url('../../assets/kids-large.jpg');
+            grid-row: 11 / -1;
+            grid-column: 6 / 8;
+        }
+
+        &__desserts{
+            background: url('../../assets/desserts-large.jpg');
+            grid-column: 8 / 11;
+            grid-row: 10 / -1;
+        }
+
+        &__beverages{
+            background: url('../../assets/beverage-large.jpg');
+            grid-column: 11 / -1;
+            grid-row: 10 / -1;
+        }
 }    
+}
