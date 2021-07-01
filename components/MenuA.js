@@ -16,7 +16,7 @@ const  MenuA = ()=> {
             </div>
             <div className="menu__container__soupSalads"> 
             <div className="hoverContainer">
-                <Link to="/menudisplay/soupSalads">
+                <Link to="/menudisplay/soupsSalads">
                 <h1 className="titleMenu">Soup & Salads</h1>
                 </Link>
                 </div>
@@ -37,7 +37,7 @@ const  MenuA = ()=> {
             </div>
             <div className="menu__container__calzoneStromboli">
             <div className="hoverContainer">
-                <Link to="/menudisplay/calzonesStromboli">
+                <Link to="/menudisplay/calzoneStromboli">
                 <h1 className="titleMenu">Calzones & Stromboli</h1>
                 </Link>
                 </div>     

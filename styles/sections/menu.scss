@@ -136,3 +136,49 @@
         }
 }    
 }
+
+
+/*STYLE THE MENU DETAIL COMPONENT WHEN SELECTED AN SPECIFICC MENU TO SEE*/
+
+
+.menuDetail{
+    background: $secondary-color;
+
+    &__container{
+        width: 80%;
+        margin: 0 auto;
+        padding: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        &__element{
+
+            &-title{
+                background: $primary-dark;
+                padding: 1rem;
+                letter-spacing: 0.5rem;
+                margin-bottom: 2rem;
+            }
+
+            width: 60%;
+            padding: 2rem;
+
+            &--item{
+                padding: 1rem;
+                &:not(:last-child){
+                    margin-bottom: 2rem;
+                }
+
+                &-description{
+                    font-size: 1.8rem;
+                }
+
+                &-price{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
