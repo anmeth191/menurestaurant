@@ -12,8 +12,8 @@ return(
             <div className="navbar__nav_links">
                 <ul className="navbar__nav_links_ul">
                 <li className="navbar__nav_links_ul_li"><Link to="/contact" className="navbar__nav_links_ul_li-links">Contact us</Link></li>       
-                <li className="navbar__nav_links_ul_li"><Link to="/directions" className="navbar__nav_links_ul_li-links">Directions</Link></li> 
-                <li className="navbar__nav_links_ul_li"><Link to="/mailinglist" className="navbar__nav_links_ul_li-links">Email us</Link></li>
+                <li className="navbar__nav_links_ul_li"><Link to="/aboutus" className="navbar__nav_links_ul_li-links">About Us</Link></li> 
+                <li className="navbar__nav_links_ul_li"><Link to="/mailinglist" className="navbar__nav_links_ul_li-links">Get Offers</Link></li>
                 <li className="navbar__nav_links_ul_li"><Link to="/menu" className="navbar__nav_links_ul_li-links">Menu</Link></li>
              </ul>
             </div>

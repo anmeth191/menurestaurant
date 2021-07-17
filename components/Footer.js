@@ -57,7 +57,7 @@ componentDidMount(){
                       <ul className="footer__foot_links_container-ul">
                          <li className="footer__foot_links_container_ul-li"><Link to="/" className="footer__foot_links_container_ul-li-link">Home</Link></li>  
                          <li className="footer__foot_links_container_ul-li"><Link to="/menu" className="footer__foot_links_container_ul-li-link">Menu</Link></li>  
-                         <li className="footer__foot_links_container_ul-li"><Link to="/directions" className="footer__foot_links_container_ul-li-link">Directions</Link></li>  
+                         <li className="footer__foot_links_container_ul-li"><Link to="/aboutus" className="footer__foot_links_container_ul-li-link">About Us</Link></li>  
                          <li className="footer__foot_links_container_ul-li"><Link to="/contact" className="footer__foot_links_container_ul-li-link">Contact Us</Link></li>  
                       </ul>
                   </div>

@@ -6,10 +6,17 @@
 @import './sections/footer.scss';
 @import './sections/index.scss';
 @import './sections/geolocation.scss';
+@import './sections/mailingList.scss';
+@import './sections/aboutUs.scss';
+@import './sections/contactComponent.scss';
+
+
 * , :root , ::after , ::before {
 padding: 0;
 margin: 0;
 box-sizing:border-box;
+overflow-x: hidden;
+
 }
 
 html{
@@ -17,4 +24,8 @@ html{
     font-family: 'Zilla Slab', serif;
     color: $text-color;
 
+
+    @include responsive(phone){
+        font-size: 50%;
+    }
 }

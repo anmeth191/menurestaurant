@@ -6,20 +6,35 @@
     display: grid;
     grid-template-columns: repeat(8 , minmax(min-content , 1fr));
     grid-template-rows: 90vh 20rem 30rem 70vh 35rem ;
+@include responsive(phone){
+    grid-template-columns: 1fr;
+    grid-template-rows: 90vh 20rem auto 70vh 35rem ;
+
+}
+
     &__showcase{
         grid-column: 1 / -1;
         grid-row: 1 / 2;
         background: linear-gradient(to right , rgba($secondary-dark , 0.9) , rgba($secondary-color , 0.8)), url('../../assets/showcase_large.jpg'); 
         background-position: start;
-        background-size: auto;
+        background-size: cover;
         background-attachment: fixed;
         position: relative;
+        @include responsive(phone){
+            background: linear-gradient(to right , rgba($secondary-dark , 0.9) , rgba($secondary-color , 0.8)), url('../../assets/showcase_responsive.jpg'); 
+            background-position: start;
+            background-size:cover;
+            background-attachment: fixed;
+  
+        }
 
         &__container{
            @include centerAbsoulte;
            background: rgba($secondary-color , 0.8);
-            
             padding: 10rem 20rem;
+            @include responsive(phone){
+                background: none;
+            }
             
 
             &--content{
@@ -29,13 +44,17 @@
                     & > h1 { margin-bottom: 1rem;}
                     &-h1{
                      display: block;
-                     font-size: 7rem;
-                     letter-spacing: 0.3rem;
+                     font-size: $bigTitleSize;
+                     letter-spacing: $smallFontSpacin;
+
+                     @include responsive(phone){
+                         font-size: 5.5rem;
+                     }
                     }//end of the header h1 element
 
                     &-h2{
                        display: block;
-                       font-size: 2rem;
+                       font-size: $smallTitleFont;
                        text-transform: lowercase;
                     }//end of the header h2 element
                 }//end of the container where the to headers are 
@@ -45,8 +64,7 @@
                 width: 100%;
                 
                 &-container{
-                    width: 60%;
-                    margin: 0 auto;
+                    @include marginAuto;
                     display: flex;
                    flex-direction: row;
                    flex-wrap: wrap;
@@ -55,13 +73,11 @@
                 &-button{
                    
                     background: $primary-dark;
-                    padding: 1.5rem 3rem;
+                    padding: $small-padding $medium-padding;
                     text-decoration: none;
                     color: $text-color;
-                    font-size: 2rem;
+                    font-size: $smallTitleFont;
                     transition: 0.3s;
-                    outline: solid 0.1rem $text-color ;
-
                     &:not(:last-child){margin-right: 2rem;}
                     &:active{transform: translateY(0.2rem);transition: 0.2s;}
                     &:hover{ background: $primary-color;}
@@ -81,13 +97,16 @@
 
         &--content{
             @include centerAbsoulte;
-            font-size: 2rem;     
+            font-size: $smallTitleFont;     
             width: 90%;
             margin: 0 auto;
             text-align: center;
             
             &-message{
-                letter-spacing: 0.4rem;
+                letter-spacing: $mediumFontSpacin;
+                @include responsive(phone){
+                    font-size: $smallTitleFont;
+                }
             }//end of the message h1 
         }//end of the content container where the message is
     }//end of the slogan cpntainer below the showcase
@@ -99,23 +118,66 @@
               grid-row: 3 / 4;
               display: grid;
               grid-template-columns: repeat(4 , minmax(min-content , 1fr));
+
+              @include responsive(phone){
+                  grid-template-columns: 1fr;
+                  
+              }
            
               & > div{
+                  
                   background-size: cover;
                   background-position: center;
+                  @include responsive(phone){
+                      height: 30rem;
+                  }
               }
 
-              &--1{background: url('../../assets/image-1-large.jpg')}
-              &--2{background:url('../../assets/image-2-large.jpg')}
-              &--3{background: url('../../assets/image-3-large.jpg')}
-              &--4{background: url('../../assets/image-4-large.jpg')}
+              &--1{
+                  background: url('../../assets/image-1-large.jpg');
+                   @include responsive(phone){
+                    background: url('../../assets/image-1-responsive.jpg');
+                   }
+                }
+              &--2{
+                  background:url('../../assets/image-2-large.jpg');
+                  @include responsive(phone){
+                    background:url('../../assets/image-2-responsive.jpg');
+                  }
+            }
+              &--3{
+                  background: url('../../assets/image-3-large.jpg');
+                  @include responsive(phone){
+                    background: url('../../assets/image-3-responsive.jpg');
+
+                  }
+                }
+              &--4{
+                  background: url('../../assets/image-4-large.jpg');
+                  @include responsive(phone){
+                    background: url('../../assets/image-4-responsive.jpg');
+
+                  }
+                }
           } //end of the images container
 
 
           &__geolocation{
-              background: $primary-color;
+              background: url('../../assets/mapsImage.png');
+              background-size: cover;
+              background-position: start;
               grid-column: 1 / -1;
               grid-row: 4 /5;
+              display: grid;
+              justify-content: center;
+              align-items: center;
+              &__title{
+                  display: block;
+                  background: rgba($secondary-color , 0.8);
+                padding: 3rem;
+                font-size: 3rem;
+
+              }
           }//end of the geolocation
 
           &__beforeFooter{
@@ -126,16 +188,28 @@
               grid-column: 1 / -1;
              position: relative;
 
+             @include responsive(phone){
+                background: linear-gradient( to right , rgba($secondary-color , 0.7) , rgba($secondary-dark , 0.7)) , url('../../assets/image-2-responsive.jpg');
+                background-position: center;
+                background-attachment: fixed;
+                background-size: cover;
+             }
+
               &--content{
-                  width: 60%;
-                  margin: 0 auto;
+                @include marginAuto;
                    @include centerAbsoulte;
                   background: rgba($primary-dark , 0.7);
                   text-align: center;
 
                   &-message{
-                      padding: 5rem;
-                      font-size: 4rem;
+                      padding: $large-padding;
+                      font-size: $mediumTitleFont;
+
+                      
+                      @include responsive(phone){
+                          font-size: $smallTitleFont;
+                          padding: $medium-padding;
+                      }
                   }
 
               }

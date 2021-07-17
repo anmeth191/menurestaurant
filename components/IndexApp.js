@@ -43,8 +43,9 @@
           </div>
 
           <div className="index__geolocation">
-            <Geolocation />
-            </div>
+          <h1 className="index__geolocation__title">Google Geolocation API Code goes here</h1>
+          <Geolocation />
+          </div>
    
           <div className="index__beforeFooter">
             <div className="index__beforeFooter--content">

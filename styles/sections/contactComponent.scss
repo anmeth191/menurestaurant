@@ -1,0 +1,58 @@
+@import '../variables/variables.scss';
+@import '../mixins/mixins.scss';
+
+.contactComponent{
+    background: $secondary-color;
+    padding: 5rem;
+    &__container{
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2 , minmax(min-content , 1fr));
+        grid-template-rows: repeat(3 , minmax(min-content  , 20rem));
+        grid-gap: 3rem;
+    
+
+        &__form{
+          grid-column: 1 / 2;
+          grid-row: 1 / -1;
+          
+          &--list{
+              text-align: center;
+               margin-bottom: 4rem;
+              font-size:$smallTitleFont;
+              &--ul{
+                  &--li{
+                      list-style: none;
+                      padding: 0.5rem;
+                  }
+              }
+          }
+        }
+
+        &__maps{
+            grid-column: 2 / -1;
+            grid-row: 1 / -1 ;
+            text-align: center;
+            &-map{
+                background-image: url('../../assets/mapsImage.png');
+                background-size: cover;
+                background-position: center;
+                height: 60%;
+                width: 100%;
+                display: grid;
+                align-content: center;
+                justify-content: center;
+                &-title{
+                    color: white;
+                    display: block;
+                    padding: 2rem;
+                    width: 100%;
+                    background: rgba($secondary-color , 0.7);
+                    
+                }
+            }
+
+        }
+    }//end of the container
+}//end of the contactComponent class
