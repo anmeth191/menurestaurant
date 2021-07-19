@@ -64,20 +64,33 @@ and also the sides title */
 .labelStyle{
 display: block;
 font-size: $smallTitleFont;
- 
-margin-bottom:$small-padding;
+margin-bottom:0.7rem;
+transition: 0.2s;
 
 }//end of the label style
+
+.ChangelabelStyle{
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom:0.7rem;
+    transition: 0.2s;
+}//end of the label style
+    
 
 //style the input fields
 .inputStyle{
     width: 100%;
     height: 3.5rem;
     border: none;
+    //border-bottom: 0.5rem $primary-color solid;
 
     &:focus{
-        outline: 0.3rem $primary-color solid;
-        transition: 0.2s;
+           border-top: 0;
+           border-left: 0;
+           border-right: 0;
+           border-bottom: 0.8rem $primary-color solid;
+          transition: 0.2s;
+          outline: 0;
     }
 }
 

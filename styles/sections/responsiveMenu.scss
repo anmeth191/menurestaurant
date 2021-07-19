@@ -1,0 +1,42 @@
+@import '../variables/variables.scss';
+@import '../mixins/mixins.scss';
+@import '../animations/animations.scss';
+
+.sideNavbarActive{
+    display: block;
+}
+.sideNavbar{
+   display: none;
+    width: 100%;
+    height: 0;
+    background: $primary-dark;
+    color: $text-color;
+
+    animation-name: sideBarAnimation;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+   
+    
+    &-container{
+        width: 100%;    
+        padding: $large-padding;     
+        &-elements{
+            &-ul{
+                &-li{
+                    border-top: 0.1rem solid $text-color;
+                    border-bottom: 0.1rem solid $text-color;
+                   
+                    padding: $small-padding;
+                    
+                    &-link{
+                        color: $text-color;
+                        text-decoration: none;
+                        font-size: $smallTitleFont;
+                        letter-spacing: $mediumFontSpacin;
+                    }
+                }
+            }
+        }
+    }
+  
+}

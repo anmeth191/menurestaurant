@@ -4,11 +4,6 @@ import React from 'react';
 class MailingList extends React.Component{
 
 
-
-
-
-
-
  render(){
 
     return(

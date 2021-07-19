@@ -65,15 +65,15 @@ grid-gap: 1rem;
         //style the content open now closes at
         &--time{
           &-content-open , &-content-closed{
-              margin-bottom: 1rem;
+              margin: 1rem auto;
               color: $text-color;
               padding: $small-padding / 2;
               font-size: 2rem;
-              
+              width: 65%;
             @include responsive(phone){ font-size: $superSmallTitleFont;}
           }//end of the container time
           
-          &-content-open{background: green;}
+          &-content-open{background: darkgreen;}
           &-content-closed{background: $primary-dark;}
 
         }//end of the time

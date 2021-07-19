@@ -21,7 +21,7 @@
                <div className="index__showcase__container--content--buttons">
                  <div className="index__showcase__container--content--buttons-container"> 
                  <Link to="/menu" className="index__showcase__container--content--buttons-container-button">Menu</Link>
-                 <Link to="/directions "className="index__showcase__container--content--buttons-container-button">Visit Us</Link>
+                 <Link to="/contact"className="index__showcase__container--content--buttons-container-button">Visit Us</Link>
                  </div>
                </div>
   

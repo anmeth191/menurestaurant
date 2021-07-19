@@ -9,16 +9,15 @@
     &__showcase{
         height: 40vh;
         background:linear-gradient(to right , rgba( $secondary-color , 0.5) , rgba($secondary-dark , 0.7)) , url('../../assets/pizzaMailing-large.jpg');
-        background-position: center;
+       background-position: center;
         background-size: cover;
-        background-attachment: fixed;
         display: flex;
         justify-content: center;
         align-items: center;
 
         &__title{
             display: block;
-            background: $primary-color;
+            background: $primary-dark;
             padding: $large-padding;
             @include responsive(phone){
                 padding: $small-padding;
